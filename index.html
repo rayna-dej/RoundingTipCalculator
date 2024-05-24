@@ -19,13 +19,15 @@
                 <span>ITEM</span>
                 <span style="float: right;">AMOUNT</span>
                 <hr>
-                <div class="receipt-vals">
-                    <span>CURRENT TOTAL</span>
-                    <span style="float: right;"><input type="number" id="curr-total"  placeholder="0.00"></span>
-                </div>
-                <div class="receipt-vals">
-                    <span>TIP PERCENTAGE</span>
-                    <span style="float: right;"><input type="number" id="tip-per" size="3" placeholder="0"></span>
+                <div id="tip-info">
+                    <div class="receipt-vals">
+                        <span>CURRENT TOTAL</span>
+                        <span style="float: right;"><input type="number" id="curr-total" step=".01" placeholder="0.00"></span>
+                    </div>
+                    <div class="receipt-vals">
+                        <span>TIP PERCENTAGE</span>
+                        <span style="float: right;"><input type="number" id="tip-per" step=".01" size="3" placeholder="0"></span>
+                    </div>
                 </div>
                 <div class="receipt-vals">
                     <u onclick="calc()">CLICK HERE TO SUBMIT</u>

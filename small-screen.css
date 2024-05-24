@@ -1,0 +1,66 @@
+/* sizing for phones */
+@font-face {
+    font-family: Merchant;
+    src: url(MerchantCopy.ttf);
+}
+
+body{
+    background-color: black; /* black to represent receipt tray*/
+    font-weight: bold;
+    font-family: Merchant;
+}
+
+#receipt-body img{
+    width: 100%;
+    height: 50px;
+    margin: 25px auto 25px auto;
+    display:flex;
+}
+
+input{
+    width: 50px;
+    font-family: Merchant;
+    font-size: 23px;
+    text-align: center;
+    display: inline;
+    bottom: 8px;
+    position: relative;
+}
+
+hr{
+    border-top: 2px dashed black;
+}
+
+.receipt-vals{
+    margin: 35px 0px 35px 0px;
+    font-size: 23px;
+}
+
+#receipt-body{
+    background-image: url('background.jpeg');
+    height: 100%;
+    margin: 30px 20px 30px 20px;
+    flex-wrap: wrap;
+    padding: 30px 17px 30px 17px;
+}
+
+#title{
+    text-align: center;
+    font-size: 42px;
+    font-family: Merchant;
+    flex-wrap: wrap;
+}
+
+#receipt-content{
+    font-size: 23px;
+    padding-top: 0;
+}
+
+#thanks{
+    margin-inline: 20px;
+    text-align: center;
+}
+
+#subtitle{
+    margin-bottom: 0;
+}

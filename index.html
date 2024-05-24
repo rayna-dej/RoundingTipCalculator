@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen and (min-width: 639px)" href="wide-screen.css">
+        <link rel="stylesheet" media="screen and (max-width: 640px)" href="small-screen.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <title>Rounding Tip Calculator</title>
+    </head>
+
+    <body>
+        <div id="receipt-body">
+            <h1 id="title">ROUNDING TIP CALCULATOR</h1>
+            <h2 id="subtitle">ORDER DETAILS</h2>
+            <div id="receipt-content">
+                <hr>
+                <span>ITEM</span>
+                <span style="float: right;">AMOUNT</span>
+                <hr>
+                <div class="receipt-vals">
+                    <span>CURRENT TOTAL</span>
+                    <span style="float: right;"><input type="number" id="curr-total"  placeholder="0.00"></span>
+                </div>
+                <div class="receipt-vals">
+                    <span>TIP PERCENTAGE</span>
+                    <span style="float: right;"><input type="number" id="tip-per" size="3" placeholder="0"></span>
+                </div>
+                <div class="receipt-vals">
+                    <u onclick="calc()">CLICK HERE TO SUBMIT</u>
+                </div>
+                <hr>
+                <hr>
+                <div class="receipt-vals">
+                    <span>TIP:</span>
+                    <span id="new-tip" style="float: right;">0.00</span>
+                </div>
+                <div class="receipt-vals">
+                    <span>TOTAL:</span>
+                    <span id="new-total" style="float: right;">0.00</span>
+                </div>
+                <hr>
+            </div>
+            <img id="barcode" src="bc-button.png" onclick="reset()" alt="CLICK HERE TO RESET ALL"> <!--barcode just for decoration-->
+            <h1 id="thanks">THANK YOU FOR VISITING!</h1>
+        </div>
+    </body>
+</html>
